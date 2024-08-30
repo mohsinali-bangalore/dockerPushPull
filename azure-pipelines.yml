@@ -13,9 +13,15 @@ steps:
 - task: JFrogDocker@1
   inputs:
     command: 'Pull'
-    artifactoryConnection: 'mdmohsinaliawsArtifactoryV2'
-    imageName: 'artifactory.mdmohsinaliaws.com/dockerhub/postgres:latest'
+    artifactoryConnection: 'HTS2'
+    imageName: 'mohsin-docker.jfrog.io/postgres:latest'
     skipLogin: false
+# - task: JFrogDocker@1
+#   inputs:
+#     command: 'Pull'
+#     artifactoryConnection: 'mdmohsinaliawsArtifactoryV2'
+#     imageName: 'artifactory.mdmohsinaliaws.com/dockerhub/postgres:latest'
+#     skipLogin: false
 
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
