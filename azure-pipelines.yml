@@ -14,7 +14,7 @@ steps:
   inputs:
     command: 'Pull'
     artifactoryConnection: 'HTS2'
-    imageName: 'mohsin-docker.jfrog.io/postgres:latest'
+    imageName: 'hts2-mohsin-docker.jfrog.io/postgres:latest'
     skipLogin: false
 # - task: JFrogDocker@1
 #   inputs:
