@@ -12,10 +12,17 @@ pool:
 steps:
 - task: JFrogDocker@1
   inputs:
-    command: 'Pull'
+    command: 'Push'
     artifactoryConnection: 'HTS2'
     imageName: 'hts2-mohsin-docker.jfrog.io/postgres:latest'
+    threads: '3'
     skipLogin: false
+# - task: JFrogDocker@1
+#   inputs:
+#     command: 'Pull'
+#     artifactoryConnection: 'HTS2'
+#     imageName: 'hts2-mohsin-docker.jfrog.io/postgres:latest'
+#     skipLogin: false
 # - task: JFrogDocker@1
 #   inputs:
 #     command: 'Pull'
